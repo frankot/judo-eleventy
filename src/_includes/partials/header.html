@@ -48,7 +48,12 @@
             </button>
 
             {# burger menu #}
-            <div x-show="open"
+            <div x-show="open" x-transition:enter="transition ease-in-out duration-300"
+                x-transition:enter-start="opacity-0 transform scale-x-0 -translate-x-1/2"
+                x-transition:enter-end="opacity-100 transform scale-x-100 translate-x-0"
+                x-transition:leave="transition ease-in-out duration-300"
+                x-transition:leave-start="opacity-100 transform scale-x-100 translate-x-0"
+                x-transition:leave-end="opacity-0 transform scale-x-0 -translate-x-1/2"
                 class="absolute inset-x-0 top-20 z-10 origin-top-right overflow-hidden rounded-lg bg-white p-2 shadow-md ring-1 ring-black ring-opacity-5">
                 <div>
                     <div class="flex items-center justify-between px-5 pt-4">
