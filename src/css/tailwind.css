@@ -36,9 +36,7 @@
   .wrapper {
     @apply relative ml-12 px-4 pt-16 font-inter-regular sm:ml-32 sm:px-6 sm:py-24 lg:px-8 lg:pt-20 lg:pb-24 xl:ml-44 2xl:ml-64;
   }
-  .footH {
-    @apply font-inter-bold text-xl text-neutral-50;
-  }
+
   .campCard {
     background-size: 100%;
     @apply w-full grow bg-center bg-no-repeat;
